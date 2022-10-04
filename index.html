@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8"><!-- Кодировака сайта -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon"><!-- Иконка для сайта -->
+
+    <!-- Теги для SEO оптимизации -->
+    <title>Главная</title><!-- Имя сайта для поиска -->
+    <meta name="description" content="Длина описания должная быть 100-120 символов"><!-- Описание сайта для поиска -->
+    <meta name="robots" content="index,follow"><!-- Настройки поисковиков сайта для поиска -->
+    <meta name="keywords" content="ключ 1, ключ 2, ключ 3…" /><!-- Ключевые слова сайта для поиска. Не указывайте более 10 ключевых слов. Кроме того, прописанные ключевые слова должны присутствовать в тексте страницы. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Настройка размеров для телефон сайта для поиска -->
+
+    <!-- Стили для всех страниц -->
+    <link rel="stylesheet" href="./fonts/font-awesome-4.7.0/css/font-awesome.min.css"><!-- Иконочный шрифт -->
+    <link rel="stylesheet" href="./css/style.css"><!-- Основные стили -->
+
+    <!-- Стили других страниц -->
+    <link rel="stylesheet" href="./css/kursi.css"><!-- СТраница со всеми курсами -->
+    <link rel="stylesheet" href="./css/kurs.css"><!-- СТраница с полным описанием курса -->
+</head>
+
+<body>
+
+    <header>
+        <div class="header-wrapper">
+            <a href="./"><img src="./img/logo.svg" alt=""></a>
+            <nav>
+                <ul id="navItems">
+                    <a href="./"><i class="fa fa-newspaper-o" aria-hidden="true"></i>Главная</a>
+                    <a href="./kursi"><i class="fa fa-handshake-o" aria-hidden="true"></i>Услуги</a>
+                    <a href="./informations"><i class="fa fa-question-circle" aria-hidden="true"></i>О нас</a>
+                    <a href="./contacts"><i class="fa fa-phone-square" aria-hidden="true"></i>Контакты</a>
+                </ul>
+            </nav>
+            <div class="tele">
+                <a href="tel:+79800966245">
+                    <span class="phone">+7(980)096-62-45</span>
+                    <hr>
+                    <span class="text"><i class="fa fa-phone" aria-hidden="true"></i>Заказать звонок</span>
+                </a>
+            </div>
+        </div>
+        <div class="dopnav">
+            <div class="dopnav-wrapper">
+                <span id="projectName"> </span>
+                <a id="logLink" href="#"><i class="fa fa-user-circle fa-lg" aria-hidden="true"></i>Войти в систему</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Баннер -->
+    <div id="banner"></div>
+
+    <main>
+        <div class="main-wrapper">
+
+            <!-- Боковое меню -->
+            <div id="sidebar"></div>
+
+            <!-- Контент -->
+            <div class="content" id="content"></div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-wrapper">
+            <div class="footer-left">
+                <img class="footer-logo" src="img/logo.svg" alt="">
+                <p id="projectName"> </p>
+            </div>
+            <div class="footer-right">
+                <a class="tele" href="tel:+79800966245">+7(980)096-62-45</a>
+                <span>Заказать звонок</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Панелт авторизации -->
+    <div id="loginform"></div>
+    <!-- Панель регистрации -->
+    <div id="registerform"></div>
+    
+    <script src="js/jquery-3.6.1.min.js"></script><!-- Библиотека для удобства работы -->
+    <script src="js/jquery-ui.min.js"></script><!-- Библиотека для интерфейса -->
+    <script src="js/render.js"></script><!-- Библиотека для отрисовки страниц -->
+    <script src="js/main.js"></script><!-- Библиотека функций для всех страниц -->
+
+</body>
+
+</html>
