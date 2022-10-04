@@ -1,0 +1,269 @@
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Ubuntu/Ubuntu-Medium.ttf) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+:root{
+    --color1: orange;
+    --color2: blue;
+    --widthPage: 1100px;}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+body{
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    background: lightgray;}
+/*###################################################################*/
+/*###################################################################*/
+header{
+    background: white;}
+header .header-wrapper{
+    max-width: var(--widthPage);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;}
+header .header-wrapper img{
+    width: 80px;
+    height: 80px;}
+header .header-wrapper nav{
+    height: 100px;}
+header .header-wrapper nav ul{
+    height: 100%;
+    display: flex;}
+header .header-wrapper nav ul a{
+    display: flex;
+    align-items:flex-end;
+    vertical-align: middle;
+    padding: 0 15px 10px 15px;
+    border-bottom: 7px solid white;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    transition: .2s;
+    font-size: 19px;}
+header .header-wrapper nav ul a i{
+    margin-bottom: 2px;
+    margin-right: 5px;}
+header .header-wrapper nav ul a.active, header .header-wrapper nav ul a:hover{
+    color: white;
+    background: var(--color1);
+    border-bottom: 7px solid var(--color2);}
+header .tele a{
+    text-decoration: none;
+    color: black;}
+header .tele a:hover{
+    text-decoration: underline;}
+header .tele a .phone{
+    font-size: 21px;}
+header .tele a hr{
+    border: none;
+    background: var(--color1);
+    height: 5px;}
+header .tele a .text{
+    vertical-align: middle;
+    display: flex;
+    justify-content: right;
+    font-weight: bold;}
+header .tele a .text i{
+    margin-right: 5px;
+    padding-top: 1px;}
+header .dopnav{
+    border-top: 1px solid var(--color2);
+    background: white;}
+header .dopnav .dopnav-wrapper{
+    max-width: var(--widthPage);
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    font-size: 18px;}
+header .dopnav .dopnav-wrapper span{
+    text-decoration: underline;
+    font-size: 21px;}
+header .dopnav .dopnav-wrapper a{
+    vertical-align: middle;
+    transition: .2s;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    border: 2px solid var(--color1);}
+header .dopnav .dopnav-wrapper a i{
+    margin-right: 5px;}
+header .dopnav .dopnav-wrapper a:hover{
+    background: var(--color1);
+    color: white;}
+/*###################################################################*/
+/*###################################################################*/
+.banner{
+    height: 400px;
+    background: url(../img/banner.jpg);
+    background-size: cover;}
+.banner .banner-wrapper{
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+.banner .banner-wrapper .banner-body{
+    text-align: center;
+    max-width: var(--widthPage);
+    margin: auto;
+    font-size: 50px;}
+/*###################################################################*/
+/*###################################################################*/
+main{
+    margin: 10px 0;}
+main .main-wrapper{
+    max-width: var(--widthPage);
+    margin: auto;
+    display: flex;}
+main .main-wrapper .sidebar{
+    margin-right: 10px;}
+main .main-wrapper .sidebar .sideitem{
+    width: 250px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;}
+main .main-wrapper .sidebar .sideitem .sideTitle{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 5px;}
+main .main-wrapper .sidebar .sideitem hr{
+    width: 100%;}
+main .main-wrapper .sidebar .sideitem ul{
+    display: flex;
+    flex-direction: column;}
+main .main-wrapper .sidebar .sideitem ul a{
+    transition: .2s;
+    text-decoration: none;
+    color: black;
+    margin: 10px 0;}
+main .main-wrapper .sidebar .sideitem ul a:hover{
+    text-decoration: underline;}
+main .content{
+    width: 100%;}
+main .content .block{
+    margin-bottom: 10px;
+    background: white;
+    padding: 20px;}
+main .content .block h1{
+    text-align: center;
+    margin-bottom: 5px;}
+main .content .block p{
+    margin-top: 10px;
+    text-indent: 40px;
+    font-size: 17px;}
+main hr{
+    border: none;
+    background: var(--color1);
+    height: 2px;}
+/*###################################################################*/
+/*###################################################################*/
+footer{
+    padding: 10px 0;
+    background-color: white;}
+footer .footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--widthPage);
+    margin: auto;}
+footer .footer-wrapper .footer-left{
+    display: flex;
+    align-items: center;}
+footer .footer-wrapper .footer-left .footer-logo{
+    width: 70px;
+    height: 70px;
+    margin-right: 15px;}
+footer .footer-wrapper .footer-right .tele{
+    display: block;
+    text-decoration: none;}
+footer .footer-wrapper .footer-right .tele:hover{
+    text-decoration: underline;}
+/*###################################################################*/
+/*###################################################################*/
+.login{
+    display: none;
+    top: 0;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;}
+.login .login-wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+.login .login-wrapper form{
+    border: 2px solid var(--color1);
+    background: url(../img/login.jpg);
+    background-size: cover;}
+.login .login-wrapper .form-wrapper{
+    padding: 40px 30px;
+    backdrop-filter: blur(3px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+.login .login-wrapper form .form-wrapper .close{
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: right;}
+.login .login-wrapper form .form-wrapper .close i{
+    font-size: 25px;
+    color: rgb(145, 145, 145);
+    cursor: pointer;
+    transition: .2s;}
+.login .login-wrapper form .form-wrapper .close i:hover{
+    color: black;}
+.login .login-wrapper form .form-wrapper a{
+    transition: .2s;
+    color: white;}
+.login .login-wrapper form .form-wrapper a:hover{
+    color: red;}
+.login .login-wrapper form .form-wrapper p{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px 0 25px 0}
+.login .login-wrapper form .form-wrapper span{
+    color: var(--color1);
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;}
+.login .login-wrapper form .form-wrapper input{
+    width: calc(100% + 15px);
+    font-size: 17px;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    border: 2px solid var(--color1);
+    outline: none;
+    transition: .2s;}
+.login .login-wrapper form .form-wrapper input:focus{
+    background: lightgray;}
+.login .login-wrapper form .form-wrapper input[type="submit"]{
+    width: calc(100% + 15px);
+    margin-top: 15px;
+    outline: none;
+    padding: 15px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid var(--color1);
+    background: white;
+    cursor: pointer;
+    transition: .2s;}
+.login .login-wrapper form .form-wrapper input[type="submit"]:hover{
+    background: var(--color1);
+    color: white;}

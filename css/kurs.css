@@ -1,0 +1,16 @@
+.kurs-img{
+    width: 60%;
+    display: flex;
+    margin: auto;}
+.kurs-btn{
+    width: 100%;
+    padding: 20px 0;
+    margin: 10px 0;
+    font-size: 25px;
+    border: 2px solid var(--color1);
+    background: white;
+    cursor: pointer;
+    transition: .2s;}
+.kurs-btn:hover{
+    background: var(--color1);
+    color: white;}
